@@ -34,11 +34,10 @@
 		width: 100%;
 		padding: 10px;
 		outline: none;
-		border:1px solid #f7385b;
-		border-left:none;
-		border-radius:0px 5px 5px 0px;
-		
-		
+		border-bottom:1px solid #f7385b;
+		border-top: none;
+		border-left: none;
+		border-right: none;
 	}
 	.btn {
     background-color: #f7385b;
@@ -52,12 +51,12 @@
 </style>
 </head>
 <body>
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row">
-			<div class="col-md-12 col-xs-12 top"></div>
-			<div class="col-md-3 "></div>
-			<div class="col-md-3 "></div>
-			<div class="col-md-5 col-xs-5"  style="background-color: white;padding: 10px;">
+			<div class="col-sm-12 top"></div>
+			<div class="col-sm-1"></div>
+			<div class="col-sm-2"></div>
+			<div class="col-sm-12"  style="background-color: white;padding: 10px;">
 
 				<center>
 					<h3 style="color:#f7385b;">Sign Up</h3>
@@ -65,19 +64,22 @@
 						<i class="fa fa-user icon"></i>
 						<input class="input-field" type="text" placeholder="Username" name="usrnm">
 					</div>
-
+					<br>
 					<div class="input-container">
 						<i class="fa fa-key icon"></i>
 						<input class="input-field" type="password" placeholder="Password" name="psw">
 					</div>
+					<br>
 					<div class="input-container">
 						<i class="fa fa-key icon"></i>
 						<input class="input-field" type="password" placeholder="Retype-password" name="psw">
 					</div>
+					<br>
 					<div class="input-container">
 						<i class="fa fa-envelope icon"></i>
 						<input class="input-field" type="text" placeholder="Email" name="email">
 					</div>
+					<br>
 					<button type="submit" class="btn">Register</button><br><br>
 					<div>Already have account <a href="" style="color:#f7385b;">Login</a></div>
 				</div>
