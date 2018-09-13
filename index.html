@@ -1,220 +1,87 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-
 <!DOCTYPE html>
-<html lang="en">
-    <head> 
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-		<!-- Website CSS style -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-
-		<!-- Website Font style -->
-	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-		<link rel="stylesheet" href="style.css">
-		<!-- Google Fonts -->
-		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
-
-		<title>Admin</title>
-		<style type="text/css">
-			/*
-/* Created by Filipe Pina
- * Specific styles of signin, register, component
- */
-/*
- * General styles
- */
-#playground-container {
-    height: 500px;
-    overflow: hidden !important;
-    -webkit-overflow-scrolling: touch;
-}
-body, html{
-     height: 100%;
- 	background-repeat: no-repeat;
- 	background:url(https://i.ytimg.com/vi/4kfXjatgeEU/maxresdefault.jpg);
- 	font-family: 'Oxygen', sans-serif;
-	    background-size: cover;
-}
-
-.main{
- 	margin:50px 15px;
-}
-
-h1.title { 
-	font-size: 50px;
-	font-family: 'Passion One', cursive; 
-	font-weight: 400; 
-}
-
-hr{
-	width: 10%;
-	color: #fff;
-}
-
-.form-group{
-	margin-bottom: 15px;
-}
-
-label{
-	margin-bottom: 15px;
-}
-
-input,
-input::-webkit-input-placeholder {
-    font-size: 11px;
-    padding-top: 3px;
-}
-
-.main-login{
- 	background-color: #fff;
-    /* shadows and rounded borders */
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-
-}
-.form-control {
-    height: auto!important;
-    width: 400px;
-    border-radius: 10px;
-    border:none;
-padding: 8px 12px !important;
-}
-.input-group {
-    -webkit-box-shadow: 0px 2px 5px 0px !important;
-    -moz-box-shadow: 0px 2px 5px 0px !important;
-    box-shadow: 0px 2px 5px 0px !important;
-}
-#button {
-    border: 1px solid #ccc;
-    margin-top: 28px;
-    padding: 6px 12px;
-    color: #666;
-    text-shadow: 0 1px #fff;
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+	body{
+		background-color: #f7385b;
+	}
+	.top{
+		margin-top:70px;
+	}
+	.input-container {
+		display: -ms-flexbox; /* IE10 */
+		display: flex;
+		width: 70%;
+		margin-bottom: 15px;
+	}
+	.icon {
+		padding: 10px;
+		background: #f7385b;
+		color: white;
+		min-width: 50px;
+		text-align: center;
+	}
+	.fa{
+		border-bottom-left-radius: 5px;
+		border-top-left-radius: 5px;
+	}
+	.input-field {
+		width: 100%;
+		padding: 10px;
+		outline: none;
+		border-bottom:1px solid #f7385b;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+	}
+	.btn {
+    background-color: #f7385b;
+    color: white;
+    padding: 15px 20px;
+    border: none;
     cursor: pointer;
-    -moz-border-radius: 3px 3px;
-    -webkit-border-radius: 3px 3px;
-    border-radius: 3px 3px;
-    -moz-box-shadow: 0 1px #fff inset, 0 1px #ddd;
-    -webkit-box-shadow: 0 1px #fff inset, 0 1px #ddd;
-    box-shadow: 0 1px #fff inset, 0 1px #ddd;
-    background: #f5f5f5;
-    background: -moz-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f5), color-stop(100%, #eeeeee));
-    background: -webkit-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
-    background: -o-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
-    background: -ms-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
-    background: linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#eeeeee', GradientType=0);
+    width: 40%;
+    opacity: 0.9;
 }
-.main-center{
- 	margin-top: 30px;
- 	margin: 0 auto;
- 	max-width: 400px;
-    padding: 10px 40px;
-	background:#009edf;
-	    color: #FFF;
-    text-shadow: none;
-	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
--moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 top"></div>
+			<div class="col-md-3 "></div>
+			<div class="col-md-3 "></div>
+			<div class="col-md-5 col-xs-12"  style="background-color: white;padding: 10px;">
 
-}
-span.input-group-addon i {
-    color: #009edf;
-    font-size: 17px;
-}
+				<center>
+					<h3 style="color:#f7385b;">Sign Up</h3>
+					<div class="input-container">
+						<i class="fa fa-user icon"></i>
+						<input class="input-field" type="text" placeholder="Username" name="usrnm">
+					</div>
 
-.login-button{
-	margin-top: 5px;
-}
-
-.login-register{
-	font-size: 11px;
-	text-align: center;
-}
-
-		</style>
-
-
-	</head>
-	<body>
-		<div class="container">
-			<div class="row main">
-				<div class="main-login main-center">
-				<h5>Sign up once and watch any of our free demos.</h5>
-					<form class="" method="post" action="#">
-						
-						<div class="form-group">
-							<label for="name" class="cols-sm-2 control-label">Your Name</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									
-									<input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="email" class="cols-sm-2 control-label">Your Email</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									
-									<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="username" class="cols-sm-2 control-label">Username</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									
-									<input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="password" class="cols-sm-2 control-label">Password</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									
-									<input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									
-									<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group ">
-							<a href="https://deepak646.blogspot.com/" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Register</a>
-						</div>
-						
-					</form>
+					<div class="input-container">
+						<i class="fa fa-key icon"></i>
+						<input class="input-field" type="password" placeholder="Password" name="psw">
+					</div>
+					<div class="input-container">
+						<i class="fa fa-key icon"></i>
+						<input class="input-field" type="password" placeholder="Retype-password" name="psw">
+					</div>
+					<div class="input-container">
+						<i class="fa fa-envelope icon"></i>
+						<input class="input-field" type="text" placeholder="Email" name="email">
+					</div>
+					<button type="submit" class="btn">Register</button><br><br>
+					<div>Already have account <a href="" style="color:#f7385b;">Login</a></div>
 				</div>
 			</div>
 		</div>
 
-		 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
 	</body>
-</html>
+	</html>
