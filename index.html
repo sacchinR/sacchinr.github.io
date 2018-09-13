@@ -11,12 +11,12 @@
 		background-color: white;
 	}
 	.top{
-		margin-top:70px;
+		margin-top:50px;
 	}
 	.input-container {
 		display: -ms-flexbox; /* IE10 */
 		display: flex;
-		width: 70%;
+		width: 50%;
 		margin-bottom: 15px;
 	}
 	.icon {
@@ -34,10 +34,10 @@
 		width: 100%;
 		padding: 10px;
 		outline: none;
-		border-bottom:1px solid #f7385b;
-		border-top: none;
-		border-left: none;
-		border-right: none;
+		border:1px solid #f7385b;
+		
+		border-radius: 0px 5px 5px 0px;
+		
 	}
 	.btn {
     background-color: #f7385b;
@@ -53,13 +53,18 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12 top"></div>
+			<div class="col-sm-12 top">
+				<center><h1 style="color:gray;font-family:New Walt Disney UI;">SHREE <span  style="color:#f7385b;">GANAPATHY NARAYANA</span> TEXTILES</h1><br>
+					<h3 style="color:#f7385b;font-family:New Walt Disney UI;font-size:30px;">Sign <span style="color:gray;">Up</span></h3>
+				</center>
+			</div>
 			<div class="col-sm-1 top"></div>
 			<div class="col-sm-2"></div>
 			<div class="col-sm-12"  style="background-color: white;padding: 10px;border-radius: 10px;">
 
+				<form action="login.html">
 				<center>
-					<h3 style="color:#f7385b;">Sign Up</h3>
+					
 					<div class="input-container">
 						<i class="fa fa-user icon"></i>
 						<input class="input-field" type="text" placeholder="Username" name="usrnm">
@@ -87,6 +92,8 @@
 					<br>
 					<button type="submit" class="btn">Register</button><br><br>
 					<div>Already have account <a href="" style="color:#f7385b;">Login</a></div>
+				</center>
+			</form>
 				</div>
 			</div>
 		</div>
